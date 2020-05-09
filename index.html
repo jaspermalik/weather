@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
+    />
+    <link
+      href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="today">
+        <div class="search">
+          <div class="search-bar">
+            <svg class="iconfont iconsearch" aria-hidden="true">
+              <use xlink:href="#icon-search"></use>
+            </svg>
+            <input type="text" placeholder="搜索城市..." id="search-input" />
+          </div>
+          <div class="location">
+            <svg class="iconfont iconlocate" aria-hidden="true">
+              <use xlink:href="#icon-locate"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="icon">
+          <svg class="iconfont main" aria-hidden="true">
+            <use xlink:href="#icon-Unknown" class="today-icon"></use>
+          </svg>
+        </div>
+        <div class="temperature">
+          <span class="number">暂无</span><span class="unit">°C</span>
+        </div>
+        <div class="date">
+          <span class="week">未知</span>, <span class="time">未知</span>
+        </div>
+        <div class="division"></div>
+        <div class="rain-rate">
+          <svg class="iconfont rainrate" aria-hidden="true">
+            <use xlink:href="#icon-rainrate"></use>
+          </svg>
+          <span>下雨概率 - <span class="value">00</span>%</span>
+        </div>
+        <div class="city"><span>未知</span></div>
+      </div>
+      <div class="details">
+        <div class="week">
+          <div class="title">最近三天</div>
+          <div class="weather-card-groups">
+            <div class="card">
+              <div class="card-title">未知</div>
+              <div class="weather-icon">
+                <svg class="iconfont unknown" aria-hidden="true">
+                  <use xlink:href="#icon-Unknown"></use>
+                </svg>
+              </div>
+              <div class="card-tmp">
+                <span class="high">00°</span><span class="low">00°</span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-title">未知</div>
+              <div class="weather-icon">
+                <svg class="iconfont unknown" aria-hidden="true">
+                  <use xlink:href="#icon-Unknown"></use>
+                </svg>
+              </div>
+              <div class="card-tmp">
+                <span class="high">00°</span><span class="low">00°</span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-title">未知</div>
+              <div class="weather-icon">
+                <svg class="iconfont unknown" aria-hidden="true">
+                  <use xlink:href="#icon-Unknown"></use>
+                </svg>
+              </div>
+              <div class="card-tmp">
+                <span class="high">00°</span><span class="low">00°</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hightlights">
+          <div class="title">
+            今日指数
+          </div>
+          <div class="hl-card-groups">
+            <div class="card">
+              <div class="title">
+                紫外线强度
+              </div>
+              <div class="board">
+                <svg
+                  width="151px"
+                  height="88px"
+                  viewBox="0 0 151 88"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <title>group</title>
+                  <g
+                    stroke="none"
+                    stroke-width="1"
+                    fill="none"
+                    fill-rule="evenodd"
+                  >
+                    <g transform="translate(-43.000000, -84.000000)">
+                      <g transform="translate(48.000000, 81.000000)">
+                        <path
+                          d="M140.4,90.6 C140.4,51.4982397 108.970389,19.8 70.2,19.8 C31.4296106,19.8 0,51.4982397 0,90.6"
+                          stroke="#F0F0F1"
+                          stroke-width="7.2"
+                          transform="translate(70.200000, 55.200000) scale(-1, 1) translate(-70.200000, -55.200000) "
+                        ></path>
+                        <path
+                          d="M140.4,90.6 C140.4,51.4982397 108.970389,19.8 70.2,19.8 C31.4296106,19.8 0,51.4982397 0,90.6"
+                          stroke="#FEB24C"
+                          stroke-width="9.6"
+                          transform="translate(70.200000, 55.200000) scale(-1, 1) translate(-70.200000, -55.200000) "
+                          class="fill"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                <div class="value">0</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="title">风速</div>
+              <div class="wind-speed">
+                <span class="value">00</span><span class="unit">km/h</span>
+              </div>
+              <div class="wind-direction">
+                <div>
+                  <svg class="iconfont winddirection" aria-hidden="true">
+                    <use xlink:href="#icon-winddirection"></use>
+                  </svg>
+                </div>
+                <span class="text">暂无</span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="title">日出 && 日落</div>
+              <div class="sunrise">
+                <svg class="iconfont iconsun" aria-hidden="true">
+                  <use xlink:href="#icon-sunrise"></use>
+                </svg>
+                <span class="time">暂无</span>
+              </div>
+              <div class="sunset">
+                <svg class="iconfont iconsun" aria-hidden="true">
+                  <use xlink:href="#icon-sunset"></use>
+                </svg>
+                <span class="time">暂无</span>
+              </div>
+            </div>
+            <div class="card special">
+              <div>
+                <div class="title">湿度</div>
+                <div class="humidity">
+                  <span class="value">00</span><span class="unit">%</span>
+                </div>
+                <div class="status">暂无</div>
+              </div>
+              <div class="stick hum">
+                <div class="circle"></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="title">能见度</div>
+              <div class="visibility">
+                <span class="value">00</span><span class="unit">km</span>
+              </div>
+              <div class="status">平均值</div>
+            </div>
+            <div class="card special">
+              <div>
+                <div class="title">空气质量</div>
+                <div class="air-quality">00</div>
+                <div class="status">暂无</div>
+              </div>
+              <div class="stick air">
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="//at.alicdn.com/t/font_1704447_v434daf2z4b.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
